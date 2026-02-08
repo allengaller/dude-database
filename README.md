@@ -9,6 +9,9 @@ This database provides comprehensive and up-to-date information about lifestyle 
 - [Hong Kong](hongkong/)
 - [Shanghai](shanghai/)
 - [New York](newyork/)
+- [Thailand](thailand/)
+- [Moscow](moscow/)
+- [Saint Petersburg](spb/)
 
 ## City Directory Structure
 
@@ -87,6 +90,7 @@ For example:
 
 ### Shanghai
 - [Shanghai-spa](shanghai/shanghai-spa.md) - Updated 2026
+- [Shanghai-library](shanghai/shanghai-library.md) - Updated 2026
 - [Shanghai-coffee](shanghai/shanghai-coffee.md) - Updated 2026
 - [Shanghai-park](shanghai/shanghai-park.md) - Updated 2026
 - [Shanghai-art](shanghai/shanghai-art.md) - Updated 2026
@@ -98,9 +102,84 @@ For example:
 - [Shanghai-hiking](shanghai/shanghai-hiking.md) - Updated 2026
 - [Shanghai-internet-cafe](shanghai/shanghai-internet-cafe.md) - Updated 2026
 - [Shanghai-internet-famous](shanghai/shanghai-internet-famous.md) - Updated 2026
-- [Shanghai-library](shanghai/shanghai-library.md) - Updated 2026
 - [Shanghai-running](shanghai/shanghai-running.md) - Updated 2026
 - [Shanghai-young-women](shanghai/shanghai-young-women.md) - Updated 2026
+- [Shanghai-hospital](shanghai/shanghai-hospital.md) - Updated 2026
+- [Shanghai-dentist](shanghai/shanghai-dentist.md) - Updated 2026
+- [Shanghai-psychology](shanghai/shanghai-psychology.md) - Updated 2026
+- [Shanghai-funeral](shanghai/shanghai-funeral.md) - Updated 2026
+- [Shanghai-cemetery](shanghai/shanghai-cemetery.md) - Updated 2026
+- [Shanghai-nursing-home](shanghai/shanghai-nursing-home.md) - Updated 2026
+- [Shanghai-tourism](shanghai/shanghai-tourism.md) - Updated 2026
+- [Moscow-library](moscow/moscow-library.md) - Updated 2026
+- [Moscow-coffee](moscow/moscow-coffee.md) - Updated 2026
+- [Moscow-park](moscow/moscow-park.md) - Updated 2026
+- [Moscow-art](moscow/moscow-art.md) - Updated 2026
+- [Moscow-amusement](moscow/moscow-amusement.md) - Updated 2026
+- [Moscow-bars](moscow/moscow-bars.md) - Updated 2026
+- [Moscow-cycling](moscow/moscow-cycling.md) - Updated 2026
+- [Moscow-dating](moscow/moscow-dating.md) - Updated 2026
+- [Moscow-gym](moscow/moscow-gym.md) - Updated 2026
+- [Moscow-hiking](moscow/moscow-hiking.md) - Updated 2026
+- [Moscow-internet-cafe](moscow/moscow-internet-cafe.md) - Updated 2026
+- [Moscow-internet-famous](moscow/moscow-internet-famous.md) - Updated 2026
+- [Moscow-running](moscow/moscow-running.md) - Updated 2026
+- [Moscow-young-women](moscow/moscow-young-women.md) - Updated 2026
+- [Moscow-hospital](moscow/moscow-hospital.md) - Updated 2026
+- [Moscow-dentist](moscow/moscow-dentist.md) - Updated 2026
+- [Moscow-psychology](moscow/moscow-psychology.md) - Updated 2026
+- [Moscow-funeral](moscow/moscow-funeral.md) - Updated 2026
+- [Moscow-cemetery](moscow/moscow-cemetery.md) - Updated 2026
+- [Moscow-nursing-home](moscow/moscow-nursing-home.md) - Updated 2026
+- [Moscow-tourism](moscow/moscow-tourism.md) - Updated 2026
+
+### Thailand
+- [Thailand-spa](thailand/thailand-spa.md) - Updated 2026
+- [Thailand-library](thailand/thailand-library.md) - Updated 2026
+- [Thailand-coffee](thailand/thailand-coffee.md) - Updated 2026
+- [Thailand-park](thailand/thailand-park.md) - Updated 2026
+- [Thailand-art](thailand/thailand-art.md) - Updated 2026
+- [Thailand-amusement](thailand/thailand-amusement.md) - Updated 2026
+- [Thailand-bars](thailand/thailand-bars.md) - Updated 2026
+- [Thailand-cycling](thailand/thailand-cycling.md) - Updated 2026
+- [Thailand-dating](thailand/thailand-dating.md) - Updated 2026
+- [Thailand-gym](thailand/thailand-gym.md) - Updated 2026
+- [Thailand-hiking](thailand/thailand-hiking.md) - Updated 2026
+- [Thailand-internet-cafe](thailand/thailand-internet-cafe.md) - Updated 2026
+- [Thailand-internet-famous](thailand/thailand-internet-famous.md) - Updated 2026
+- [Thailand-running](thailand/thailand-running.md) - Updated 2026
+- [Thailand-young-women](thailand/thailand-young-women.md) - Updated 2026
+- [Thailand-hospital](thailand/thailand-hospital.md) - Updated 2026
+- [Thailand-dentist](thailand/thailand-dentist.md) - Updated 2026
+- [Thailand-psychology](thailand/thailand-psychology.md) - Updated 2026
+- [Thailand-funeral](thailand/thailand-funeral.md) - Updated 2026
+- [Thailand-cemetery](thailand/thailand-cemetery.md) - Updated 2026
+- [Thailand-nursing-home](thailand/thailand-nursing-home.md) - Updated 2026
+- [Thailand-tourism](thailand/thailand-tourism.md) - Updated 2026
+
+### SPB (Saint Petersburg)
+- [SPB-spa](spb/spb-spa.md) - Updated 2026
+- [SPB-library](spb/spb-library.md) - Updated 2026
+- [SPB-coffee](spb/spb-coffee.md) - Updated 2026
+- [SPB-park](spb/spb-park.md) - Updated 2026
+- [SPB-art](spb/spb-art.md) - Updated 2026
+- [SPB-amusement](spb/spb-amusement.md) - Updated 2026
+- [SPB-bars](spb/spb-bars.md) - Updated 2026
+- [SPB-cycling](spb/spb-cycling.md) - Updated 2026
+- [SPB-dating](spb/spb-dating.md) - Updated 2026
+- [SPB-gym](spb/spb-gym.md) - Updated 2026
+- [SPB-hiking](spb/spb-hiking.md) - Updated 2026
+- [SPB-internet-cafe](spb/spb-internet-cafe.md) - Updated 2026
+- [SPB-internet-famous](spb/spb-internet-famous.md) - Updated 2026
+- [SPB-running](spb/spb-running.md) - Updated 2026
+- [SPB-young-women](spb/spb-young-women.md) - Updated 2026
+- [SPB-hospital](spb/spb-hospital.md) - Updated 2026
+- [SPB-dentist](spb/spb-dentist.md) - Updated 2026
+- [SPB-psychology](spb/spb-psychology.md) - Updated 2026
+- [SPB-funeral](spb/spb-funeral.md) - Updated 2026
+- [SPB-cemetery](spb/spb-cemetery.md) - Updated 2026
+- [SPB-nursing-home](spb/spb-nursing-home.md) - Updated 2026
+- [SPB-tourism](spb/spb-tourism.md) - Updated 2026
 
 ### New York
 - [New York-spa](newyork/newyork-spa.md) - Updated 2026
@@ -119,36 +198,111 @@ For example:
 - [New York-running](newyork/newyork-running.md) - Updated 2026
 - [New York-young-women](newyork/newyork-young-women.md) - Updated 2026
 
+### Thailand
+- [Thailand-tourism](thailand/thailand-tourism.md) - Updated 2026
+- [Thailand-hospital](thailand/thailand-hospital.md) - Updated 2026
+- [Thailand-psychology](thailand/thailand-psychology.md) - Updated 2026
+- [Thailand-dentist](thailand/thailand-dentist.md) - Updated 2026
+- [Thailand-cemetery](thailand/thailand-cemetery.md) - Updated 2026
+- [Thailand-nursing-home](thailand/thailand-nursing-home.md) - Updated 2026
+- [Thailand-funeral](thailand/thailand-funeral.md) - Updated 2026
+- [Thailand-coffee](thailand/thailand-coffee.md) - Updated 2026
+- [Thailand-park](thailand/thailand-park.md) - Updated 2026
+- [Thailand-gym](thailand/thailand-gym.md) - Updated 2026
+- [Thailand-spa](thailand/thailand-spa.md) - Updated 2026
+- [Thailand-library](thailand/thailand-library.md) - Updated 2026
+- [Thailand-internet-cafe](thailand/thailand-internet-cafe.md) - Updated 2026
+- [Thailand-bars](thailand/thailand-bars.md) - Updated 2026
+- [Thailand-art](thailand/thailand-art.md) - Updated 2026
+- [Thailand-amusement](thailand/thailand-amusement.md) - Updated 2026
+- [Thailand-running](thailand/thailand-running.md) - Updated 2026
+- [Thailand-hiking](thailand/thailand-hiking.md) - Updated 2026
+- [Thailand-cycling](thailand/thailand-cycling.md) - Updated 2026
+- [Thailand-dating](thailand/thailand-dating.md) - Updated 2026
+- [Thailand-internet-famous](thailand/thailand-internet-famous.md) - Updated 2026
+- [Thailand-young-women](thailand/thailand-young-women.md) - Updated 2026
+
+### Moscow
+- [Moscow-tourism](moscow/moscow-tourism.md) - Updated 2026
+- [Moscow-hospital](moscow/moscow-hospital.md) - Updated 2026
+- [Moscow-psychology](moscow/moscow-psychology.md) - Updated 2026
+- [Moscow-dentist](moscow/moscow-dentist.md) - Updated 2026
+- [Moscow-cemetery](moscow/moscow-cemetery.md) - Updated 2026
+- [Moscow-nursing-home](moscow/moscow-nursing-home.md) - Updated 2026
+- [Moscow-funeral](moscow/moscow-funeral.md) - Updated 2026
+- [Moscow-coffee](moscow/moscow-coffee.md) - Updated 2026
+- [Moscow-park](moscow/moscow-park.md) - Updated 2026
+- [Moscow-gym](moscow/moscow-gym.md) - Updated 2026
+- [Moscow-spa](moscow/moscow-spa.md) - Updated 2026
+- [Moscow-library](moscow/moscow-library.md) - Updated 2026
+- [Moscow-internet-cafe](moscow/moscow-internet-cafe.md) - Updated 2026
+- [Moscow-bars](moscow/moscow-bars.md) - Updated 2026
+- [Moscow-art](moscow/moscow-art.md) - Updated 2026
+- [Moscow-amusement](moscow/moscow-amusement.md) - Updated 2026
+- [Moscow-running](moscow/moscow-running.md) - Updated 2026
+- [Moscow-hiking](moscow/moscow-hiking.md) - Updated 2026
+- [Moscow-cycling](moscow/moscow-cycling.md) - Updated 2026
+- [Moscow-dating](moscow/moscow-dating.md) - Updated 2026
+- [Moscow-internet-famous](moscow/moscow-internet-famous.md) - Updated 2026
+- [Moscow-young-women](moscow/moscow-young-women.md) - Updated 2026
+
+### Saint Petersburg
+- [Saint Petersburg-tourism](spb/spb-tourism.md) - Updated 2026
+- [Saint Petersburg-hospital](spb/spb-hospital.md) - Updated 2026
+- [Saint Petersburg-psychology](spb/spb-psychology.md) - Updated 2026
+- [Saint Petersburg-dentist](spb/spb-dentist.md) - Updated 2026
+- [Saint Petersburg-cemetery](spb/spb-cemetery.md) - Updated 2026
+- [Saint Petersburg-nursing-home](spb/spb-nursing-home.md) - Updated 2026
+- [Saint Petersburg-funeral](spb/spb-funeral.md) - Updated 2026
+- [Saint Petersburg-coffee](spb/spb-coffee.md) - Updated 2026
+- [Saint Petersburg-park](spb/spb-park.md) - Updated 2026
+- [Saint Petersburg-gym](spb/spb-gym.md) - Updated 2026
+- [Saint Petersburg-spa](spb/spb-spa.md) - Updated 2026
+- [Saint Petersburg-library](spb/spb-library.md) - Updated 2026
+- [Saint Petersburg-internet-cafe](spb/spb-internet-cafe.md) - Updated 2026
+- [Saint Petersburg-bars](spb/spb-bars.md) - Updated 2026
+- [Saint Petersburg-art](spb/spb-art.md) - Updated 2026
+- [Saint Petersburg-amusement](spb/spb-amusement.md) - Updated 2026
+- [Saint Petersburg-running](spb/spb-running.md) - Updated 2026
+- [Saint Petersburg-hiking](spb/spb-hiking.md) - Updated 2026
+- [Saint Petersburg-cycling](spb/spb-cycling.md) - Updated 2026
+- [Saint Petersburg-dating](spb/spb-dating.md) - Updated 2026
+- [Saint Petersburg-internet-famous](spb/spb-internet-famous.md) - Updated 2026
+- [Saint Petersburg-young-women](spb/spb-young-women.md) - Updated 2026
+
 ## About This Database
 
-This database is designed to provide comprehensive, professional, and up-to-date information about lifestyle and entertainment options in major cities worldwide. Each file has been meticulously researched and updated to reflect the latest 2026 industry trends, technological advancements, and market data.
+This database is designed to provide verified, factual information about lifestyle and entertainment options in major cities worldwide. Each entry is based on publicly available data and verifiable sources, with clear attribution to original sources.
 
 ### Key Features
 
-- **Professional Content**: All content is written to industry-leading standards, providing in-depth analysis and comprehensive information.
-- **2026 Updated Information**: All core files have been fully updated with the latest 2026 data, trends, and insights.
-- **Unified Structure**: Content follows a consistent template for easy comparison and reference across cities.
-- **Technological Integration**: Coverage of AI, IoT, and smart city technologies in various industries.
-- **Sustainability Focus**: Detailed information on environmental initiatives and sustainable development practices.
-- **Cultural Insights**: Analysis of cultural trends and community engagement in each city.
+- **Verified Content**: All information is sourced from credible, publicly available sources
+- **Fact-Based Approach**: Data and claims are supported by official statistics and reputable research
+- **Transparent Sourcing**: Clear attribution to data sources and collection methods
+- **Regular Updates**: Information is periodically reviewed and updated based on new available data
+- **Quality Standards**: Content follows established verification protocols
 
 ### How to Use This Database
 
-1. **Browse by City**: Use the index above to navigate to the city of interest.
-2. **Explore by Category**: Within each city, explore content by category (spa, library, coffee, park).
-3. **Reference Information**: Use the detailed information provided for planning, research, and reference.
-4. **Compare Across Cities**: Leverage the unified structure to compare offerings and trends across different cities.
-5. **Stay Informed**: Access the latest 2026 industry insights and market forecasts for each category.
+1. **Browse by City**: Use the index above to navigate to the city of interest
+2. **Explore by Category**: Within each city, explore content by category (spa, library, coffee, park)
+3. **Verify Information**: Check cited sources for the most current information
+4. **Cross-Reference**: Compare information across multiple reliable sources
+5. **Stay Current**: Regularly check for updates as information changes over time
 
-## Update Status
+## Data Quality Statement
 
-All core files (spa, library, coffee, park) for each city have been fully updated as of 2026, including:
+This database prioritizes accuracy and transparency over completeness. We acknowledge that:
+- Information may become outdated over time
+- Some details may vary by source and time period
+- Readers should verify critical information through official channels
+- We encourage reporting of any inaccuracies found
 
-- **Market Data**: Latest 2026 statistics, trends, and forecasts
-- **Technological Advancements**: AI integration, smart technologies, and digital transformation
-- **Sustainability Initiatives**: Environmental programs and green practices
-- **New Establishments**: Updated listings of top venues and facilities
-- **Cultural Trends**: Evolving consumer behavior and community preferences
+## Source Documentation
+
+Detailed information about our sourcing methodology and verification standards can be found in:
+- `authentic-template.md` - Content creation guidelines
+- `verification-checklist.md` - Quality control procedures
 
 ## Contact Information
 
