@@ -1,0 +1,136 @@
+{
+  "categories": {
+    "spa": {
+      "name": "SPA",
+      "keywords": ["SPA", "按摩", "养生", "足疗", "推拿"],
+      "amapTypes": ["080000", "080100", "080101", "080102"],
+      "priority": 1
+    },
+    "coffee": {
+      "name": "咖啡",
+      "keywords": ["咖啡", "星巴克", "瑞幸", "精品咖啡"],
+      "amapTypes": ["050400", "050500"],
+      "priority": 1
+    },
+    "bars": {
+      "name": "酒吧",
+      "keywords": ["酒吧", "清吧", "酒馆", "威士忌"],
+      "amapTypes": ["080500", "080501"],
+      "priority": 1
+    },
+    "art": {
+      "name": "艺术",
+      "keywords": ["美术馆", "画廊", "艺术馆", "博物馆"],
+      "amapTypes": ["140000", "140100", "140200"],
+      "priority": 2
+    },
+    "park": {
+      "name": "公园",
+      "keywords": ["公园", "植物园", "湿地公园"],
+      "amapTypes": ["110000", "110100"],
+      "priority": 2
+    },
+    "gym": {
+      "name": "健身",
+      "keywords": ["健身房", "瑜伽", "游泳", "健身"],
+      "amapTypes": ["080600", "080601", "080602"],
+      "priority": 2
+    },
+    "library": {
+      "name": "图书馆",
+      "keywords": ["图书馆", "书屋", "阅读空间"],
+      "amapTypes": ["130300"],
+      "priority": 3
+    },
+    "hiking": {
+      "name": "徒步",
+      "keywords": ["登山", "徒步", "爬山", "古道"],
+      "amapTypes": ["100000", "110105"],
+      "priority": 3
+    },
+    "dating": {
+      "name": "约会",
+      "keywords": ["约会", "浪漫", "情侣"],
+      "amapTypes": [],
+      "priority": 4
+    },
+    "tourism": {
+      "name": "旅游",
+      "keywords": ["景点", "旅游", "景区"],
+      "amapTypes": ["100000", "100100"],
+      "priority": 3
+    },
+    "cycling": {
+      "name": "骑行",
+      "keywords": ["骑行", "自行车", "绿道"],
+      "amapTypes": [],
+      "priority": 4
+    },
+    "running": {
+      "name": "跑步",
+      "keywords": ["跑步", "跑道", "夜跑"],
+      "amapTypes": [],
+      "priority": 4
+    },
+    "internet-famous": {
+      "name": "网红打卡",
+      "keywords": ["网红", "打卡", "拍照"],
+      "amapTypes": [],
+      "priority": 4
+    },
+    "young-women": {
+      "name": "年轻女性消费",
+      "keywords": ["美妆", "美甲", "美容"],
+      "amapTypes": ["070000", "070100"],
+      "priority": 4
+    },
+    "dentist": {
+      "name": "牙科",
+      "keywords": ["牙科", "口腔", "诊所"],
+      "amapTypes": ["090000", "090100"],
+      "priority": 5
+    },
+    "hospital": {
+      "name": "医院",
+      "keywords": ["医院", "综合医院", "三甲医院"],
+      "amapTypes": ["090100", "090101"],
+      "priority": 5
+    },
+    "nursing-home": {
+      "name": "养老院",
+      "keywords": ["养老院", "护理院", "敬老院"],
+      "amapTypes": ["090300"],
+      "priority": 5
+    },
+    "psychology": {
+      "name": "心理咨询",
+      "keywords": ["心理咨询", "心理诊所"],
+      "amapTypes": [],
+      "priority": 5
+    },
+    "cemetery": {
+      "name": "墓地",
+      "keywords": ["公墓", "陵园", "墓地"],
+      "amapTypes": ["090400"],
+      "priority": 5
+    },
+    "funeral": {
+      "name": "殡葬",
+      "keywords": ["殡仪馆", "殡葬"],
+      "amapTypes": ["090500"],
+      "priority": 5
+    },
+    "internet-cafe": {
+      "name": "网吧",
+      "keywords": ["网吧", "网咖", "电竞馆"],
+      "amapTypes": ["080700"],
+      "priority": 5
+    },
+    "amusement": {
+      "name": "游乐场",
+      "keywords": ["游乐场", "游乐园", "主题乐园"],
+      "amapTypes": ["080300", "080301"],
+      "priority": 4
+    }
+  }
+}

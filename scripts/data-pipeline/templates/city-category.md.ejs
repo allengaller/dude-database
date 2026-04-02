@@ -1,0 +1,80 @@
+# <%= city.name %><%= category.name %>指南
+
+**数据说明**：本指南数据来自高德地图API，部分信息可能需要进一步核实
+
+---
+
+## 行业概述
+
+<%= city.name %>的<%= category.name %>行业概况。
+
+*待补充：行业发展情况、主要分布区域等*
+
+---
+
+## <%= category.name %>场所列表
+
+<% venues.forEach((venue, index) => { %>
+### <%= index + 1 %>. <%= venue.name %>
+<% if (venue.rating) { %>
+- **评分**: ⭐ <%= venue.rating %>/5 *(来源: 高德地图)*
+<% } %>
+<% if (venue.cost) { %>
+- **人均消费**: ¥<%= venue.cost %> *(来源: 高德地图)*
+<% } %>
+- **地址**: <%= venue.address || '待补充' %>
+<% if (venue.phone) { %>
+- **电话**: <%= venue.phone %>
+<% } %>
+<% if (venue.business_hours) { %>
+- **营业时间**: <%= venue.business_hours %>
+<% } %>
+<% if (venue.tag) { %>
+- **标签**: <%= venue.tag %>
+<% } %>
+<% if (venue.location) { %>
+- **位置**: <%= venue.location %>
+<% } %>
+- **数据源**: 高德地图 *(ID: <%= venue.source_id %>)*
+- **最后更新**: <%= new Date().toISOString().split('T')[0] %>
+
+<% }); %>
+
+---
+
+## 消费提示
+
+### 价格参考
+<% if (venues.some(v => v.cost)) { %>
+根据高德地图数据，<%= city.name %><%= category.name %>的人均消费范围：
+<% 
+const costs = venues.filter(v => v.cost).map(v => v.cost);
+const minCost = Math.min(...costs);
+const maxCost = Math.max(...costs);
+const avgCost = Math.round(costs.reduce((a, b) => a + b, 0) / costs.length);
+%>
+- 最低: ¥<%= minCost %>
+- 最高: ¥<%= maxCost %>
+- 平均: ¥<%= avgCost %>
+<% } else { %>
+*暂无价格数据，建议直接联系商家咨询*
+<% } %>
+
+### 选择建议
+- 建议提前电话确认营业状态
+- 消费前确认价格和服务内容
+- 注意查看商家资质和评价
+
+---
+
+## 数据来源说明
+
+*本指南内容由高德地图API自动抓取生成，数据仅供参考。*
+
+*数据获取时间: <%= new Date().toISOString().split('T')[0] %>*  
+*数据来源: 高德地图开放平台*  
+*数据状态: 自动抓取，待人工核实*
+
+---
+
+*最后更新: <%= new Date().toISOString().split('T')[0] %> (自动更新)*

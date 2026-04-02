@@ -1,0 +1,61 @@
+{
+  "cities": [
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "nameEn": "Hangzhou",
+      "adcode": "330100",
+      "amapCityCode": "0571",
+      "region": "china"
+    },
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "nameEn": "Shanghai",
+      "adcode": "310000",
+      "amapCityCode": "021",
+      "region": "china"
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "nameEn": "Shenzhen",
+      "adcode": "440300",
+      "amapCityCode": "0755",
+      "region": "china"
+    },
+    {
+      "id": "hongkong",
+      "name": "香港",
+      "nameEn": "Hong Kong",
+      "adcode": "810000",
+      "amapCityCode": "1852",
+      "region": "china"
+    },
+    {
+      "id": "thailand",
+      "name": "泰国",
+      "nameEn": "Thailand",
+      "region": "international",
+      "cities": ["Bangkok", "Chiang Mai", "Phuket"]
+    },
+    {
+      "id": "moscow",
+      "name": "莫斯科",
+      "nameEn": "Moscow",
+      "region": "international"
+    },
+    {
+      "id": "spb",
+      "name": "圣彼得堡",
+      "nameEn": "Saint Petersburg",
+      "region": "international"
+    },
+    {
+      "id": "newyork",
+      "name": "纽约",
+      "nameEn": "New York",
+      "region": "international"
+    }
+  ]
+}

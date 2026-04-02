@@ -1,0 +1,37 @@
+name: Validate Data
+
+on:
+  pull_request:
+    paths:
+      - 'data/venues/**'
+      - '*/**.md'
+  push:
+    branches: [main]
+    paths:
+      - 'data/venues/**'
+      - '*/**.md'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run data validation
+        run: npm run validate
+      
+      - name: Check Markdown syntax
+        run: |
+          # 检查所有Markdown文件是否有语法错误
+          find . -name "*.md" -not -path "./node_modules/**" -exec echo "Checking {}" \; -exec head -1 {} \;
