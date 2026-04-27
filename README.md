@@ -230,6 +230,32 @@ For example:
 
 ---
 
+## Gaming Database
+
+A comprehensive video game database covering **332 classic titles** across decades, each as an individual `.md` file.
+
+### Game Entries by Year
+- [1980s Games](gaming/games/1980s/) - 28 titles: Pac-Man, Super Mario Bros., Tetris, The Legend of Zelda, etc.
+- [1990s Games](gaming/games/1990s/) - 54 titles: Doom, Final Fantasy VII, Resident Evil, Half-Life, StarCraft, Silent Hill, etc.
+- [2010s Games](gaming/games/2010s/) - 62 titles: Dark Souls, The Witcher 3, Minecraft, GTA V, etc.
+- [2020s Games](gaming/games/2020s/) - 47 titles: Elden Ring, Baldur's Gate 3, Black Myth: Wukong, etc.
+- [2021 Games](gaming/games/2021/) - 34 titles: Hitman 3, Monster Hunter Rise, Deathloop, Valheim, It Takes Two, etc.
+- [2022 Games](gaming/games/2022/) - 37 titles: Elden Ring, God of War Ragnarök, Pokemon Legends: Arceus, Stray, Cult of the Lamb, etc.
+
+### Franchise Deep Dives (Series)
+- [Resident Evil Series](gaming/games/series/) - 14 titles: Complete saga of survival horror
+- [Call of Duty Series](gaming/games/series/) - 22 titles: FPS industry giant
+- [Battlefield Series](gaming/games/series/) - 13 titles: Large-scale warfare simulation
+- [Silent Hill Series](gaming/games/series/) - 9 titles: Psychological horror masterpiece
+- [RollerCoaster Tycoon Series](gaming/games/series/) - 12 titles: Theme park simulation classic
+
+### Legacy Overview Docs
+- [1980s Overview](gaming/gaming-classics-1980s.md) | [1990s Overview](gaming/gaming-classics-1990s.md)
+- [2010s Overview](gaming/gaming-classics-2010s.md) | [2020s Overview](gaming/gaming-classics-2020s.md)
+- [Gaming DB Index](gaming/README.md)
+
+---
+
 ## Data Quality Statement
 
 This database is currently undergoing a comprehensive data credibility rectification:
