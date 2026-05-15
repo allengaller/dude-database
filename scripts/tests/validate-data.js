@@ -96,7 +96,7 @@ function main() {
   console.log('');
   
   // 验证Markdown文件
-  const cities = ['hangzhou', 'shanghai', 'shenzhen', 'hongkong'];
+  const cities = ['hangzhou', 'shanghai', 'shenzhen', 'hongkong', 'newyork', 'thailand', 'moscow', 'spb'];
   let mdCount = 0;
   
   console.log('📄 验证Markdown文件:');

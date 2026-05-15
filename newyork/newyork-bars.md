@@ -1,116 +1,76 @@
-# 纽约酒吧指南
+# New York Bar Guide
 
-## 1. 曼哈顿酒吧区
-
-### 纽约格林威治村酒吧
-- **地址**: Greenwich Village, New York, NY
-- **特色**: 历史悠久的社区，艺术氛围浓厚，酒吧和餐厅众多，夜生活热闹
-- **适合人群**: 年轻人，艺术爱好者，夜生活爱好者
-
-### 纽约苏荷区酒吧
-- **地址**: SoHo, New York, NY
-- **特色**: 时尚潮流圣地，高端餐厅和酒吧，夜生活热闹
-- **适合人群**: 年轻人，时尚爱好者，夜生活爱好者
-
-### 纽约东村酒吧
-- **地址**: East Village, New York, NY
-- **特色**: 多元化社区，各种风格的酒吧，夜生活热闹
-- **适合人群**: 年轻人，夜生活爱好者，多元化人群
-
-## 2. 布鲁克林酒吧区
-
-### 纽约威廉斯堡酒吧
-- **地址**: Williamsburg, Brooklyn, NY
-- **特色**: 时尚潮流圣地，独立设计师品牌，艺术画廊，酒吧众多
-- **适合人群**: 年轻人，时尚爱好者，艺术爱好者
-
-### 纽约布鲁克林 Heights酒吧
-- **地址**: Brooklyn Heights, Brooklyn, NY
-- **特色**: 历史悠久的社区，优雅氛围，酒吧众多
-- **适合人群**: 年轻人，专业人士，夜生活爱好者
-
-### 纽约贝德福德-Stuyvesant酒吧
-- **地址**: Bedford-Stuyvesant, Brooklyn, NY
-- **特色**: 多元化社区，各种风格的酒吧，夜生活热闹
-- **适合人群**: 年轻人，夜生活爱好者，多元化人群
-
-## 3. 皇后区酒吧区
-
-### 纽约长岛市酒吧
-- **地址**: Long Island City, Queens, NY
-- **特色**: 新兴社区，艺术氛围浓厚，酒吧众多
-- **适合人群**: 年轻人，艺术爱好者，夜生活爱好者
-
-### 纽约阿斯托里亚酒吧
-- **地址**: Astoria, Queens, NY
-- **特色**: 多元化社区，希腊文化影响，酒吧众多
-- **适合人群**: 年轻人，夜生活爱好者，多元化人群
-
-### 纽约森林小丘酒吧
-- **地址**: Forest Hills, Queens, NY
-- **特色**:  residential neighborhood with a mix of bars and restaurants
-- **适合人群**: 年轻人，本地居民，夜生活爱好者
-
-## 4. 高端酒吧
-
-### 纽约屋顶酒吧
-- **地址**: Various locations in New York, NY
-- **特色**: 高空视野，城市夜景，高端氛围
-- **适合人群**: 高端人士，夜生活爱好者，寻求独特体验的人群
-
-### 纽约鸡尾酒酒吧
-- **地址**: Various locations in New York, NY
-- **特色**: 专业调酒师，特色鸡尾酒，高端氛围
-- **适合人群**: 成年人，鸡尾酒爱好者，寻求品质的人群
-
-### 纽约威士忌酒吧
-- **地址**: Various locations in New York, NY
-- **特色**: 威士忌种类丰富，专业调酒师，高端氛围
-- **适合人群**: 成年人，威士忌爱好者，寻求品质的人群
-
-## 5. 特色主题酒吧
-
-### 纽约体育酒吧
-- **地址**: Various locations in New York, NY
-- **特色**: 体育赛事直播，热闹氛围，适合体育爱好者
-- **适合人群**: 体育爱好者，年轻人，朋友聚会
-
-### 纽约摇滚酒吧
-- **地址**: Various locations in New York, NY
-- **特色**: 现场音乐表演，摇滚氛围，适合音乐爱好者
-- **适合人群**: 音乐爱好者，年轻人，夜生活爱好者
-
-### 纽约潜水酒吧
-- **地址**: Various locations in New York, NY
-- **特色**:  casual, no-frills bars with affordable drinks
-- **适合人群**: 本地人，预算有限的人群，夜生活爱好者
-
-## 6. 酒吧注意事项
-
-1. **营业时间**:
-   - 纽约酒吧通常营业时间为晚上7点至凌晨2点
-   - 周末可能延长至凌晨4点
-
-2. **消费水平**:
-   - 曼哈顿高端区域酒吧消费水平较高
-   - 布鲁克林和皇后区酒吧消费水平相对较低
-   - 一杯鸡尾酒价格通常在12-20美元之间
-
-3. **着装要求**:
-   - 大多数酒吧对著装要求宽松
-   - 高端酒吧可能要求正装或 smart casual
-
-4. **交通提示**:
-   - 纽约公共交通发达，可乘坐地铁、出租车等前往
-   - 酒吧区周边通常有出租车停靠点
-   - 建议使用网约车或公共交通
-
-5. **安全提示**:
-   - 注意个人财物安全
-   - 饮酒适量，避免酒后滋事
-   - 遵守法律法规
+**Data Note**: This guide is compiled from publicly available information.
 
 ---
 
-**更新时间**: 2024年1月
-**内容贡献**: 纽约夜生活爱好者
+## Overview
+
+New York City is one of the great cocktail capitals of the world. From speakeasies hidden behind unmarked doors to storied Irish taverns that have served patrons for over a century, the bar scene covers every mood and era. The city regularly lands multiple bars on the World's 50 Best Bars list. Expect serious craft, high prices, and unforgettable atmospheres.
+
+## Recommended Venues
+
+### Attaboy
+- **Address**: 134 Eldridge St, Lower East Side, Manhattan
+- **Highlights**: No menu — you tell the bartender your spirit and flavor preferences and they build a bespoke cocktail. Founded by the team behind the legendary Milk & Honey. Dark, intimate, standing-room-only space. One of the most respected cocktail bars in the US. Cash only.
+- **Price Range**: $22–$28 per cocktail
+- **Transport**: F to Delancey St; J, M, Z to Essex St
+
+### The Dead Rabbit
+- **Address**: 30 Water St, Financial District, Manhattan
+- **Highlights**: Multi-level Irish-inspired bar founded by Belfast natives. The ground floor is a casual taproom with beers and Irish coffee; the upstairs Parlor serves an extensive, category-organized cocktail menu. Named World's Best Bar in 2016. Excellent food menu as well.
+- **Price Range**: $18–$26 per cocktail; $8–$14 beers
+- **Transport**: 1 to South Ferry; 4, 5 to Bowling Green; R to Whitehall St
+
+### PDT (Please Don't Tell)
+- **Address**: 113 St. Marks Pl, East Village, Manhattan
+- **Highlights**: Enter through a vintage phone booth inside Crif Dogs hot dog shop — dial the phone and a hidden door opens to the speakeasy bar. Pioneered the modern NYC speakeasy trend when it opened in 2007. Craft cocktails and Crif Dogs are served through a pass-through window. Reservations essential.
+- **Price Range**: $18–$24 per cocktail
+- **Transport**: 6 to Astor Pl; L to 1st Ave
+
+### Employees Only
+- **Address**: 510 Hudson St, West Village, Manhattan
+- **Highlights**: Opened in 2004, one of the foundational bars of the modern craft cocktail movement. Late-night spot (open until 4 AM) known for classic cocktails executed at a very high level. The psychic at the entrance reading tarot cards is a signature touch. Also serves a late-night food menu.
+- **Price Range**: $20–$26 per cocktail
+- **Transport**: 1 to Christopher St; A, B, C, D, E, F, M to W 4th St
+
+### McSorley's Old Ale House
+- **Address**: 15 E 7th St, East Village, Manhattan
+- **Highlights**: Opened in 1854, one of the oldest bars in New York City. Serves only two beers — light or dark ale — always in pairs of small mugs. Sawdust floors, memorabilia-covered walls, and a no-frills, cash-only policy. Abraham Lincoln and John Lennon are among the famous former patrons. A true NYC institution.
+- **Price Range**: $6–$8 per pair of mugs
+- **Transport**: 6 to Astor Pl; B, D, F, M, V to Broadway–Lafayette St
+
+### Apotheke
+- **Address**: 9 Doyers St, Chinatown, Manhattan
+- **Highlights**: Located on the storied Doyers Street (once known as the Bloody Angle). The interior is modeled after a 19th-century apothecary, with cocktails organized by "prescription" categories (painkillers, stimulants, relaxants). Gorgeous, atmospheric space. Live music on select nights.
+- **Price Range**: $18–$26 per cocktail
+- **Transport**: J, M, Z to Chambers St; 6 to Canal St
+
+### Dante
+- **Address**: 79–81 MacDougal St, West Village, Manhattan
+- **Highlights**: Originally opened in 1971 as Caffe Dante, reimagined as a modern aperitivo bar. Won World's Best Bar in 2019. Famous for its Negroni menu, espresso martinis, and Italian-inspired small plates. The sidewalk seating on MacDougal St is prime people-watching territory.
+- **Price Range**: $18–$24 per cocktail; $15–$22 for Negroni flights
+- **Transport**: A, B, C, D, E, F, M to W 4th St; 1 to Christopher St
+
+### Long Island Bar
+- **Address**: 110 Atlantic Ave, Brooklyn Heights, Brooklyn
+- **Highlights**: A beloved Brooklyn neighborhood bar with mid-century character. Known for well-made classic cocktails (try the Manhattan or the martini), a great jukebox, and an unpretentious vibe. Feels like stepping back in time. The sort of place you end up staying longer than planned.
+- **Price Range**: $14–$19 per cocktail
+- **Transport**: 2, 3, 4, 5 to Borough Hall; A, C to High St; R to Court St
+
+## Tips
+
+- **Reservations**: PDT and The Dead Rabbit accept reservations (and you should book them). Attaboy and Employees Only are walk-in only — arrive early or expect a wait.
+- **Cash**: Attaboy and McSorley's are cash only. Most others accept cards.
+- **Dress code**: Most of these bars are smart-casual. No shorts or flip-flops at Attaboy or Employees Only.
+- **Late night**: Employees Only stays open until 4 AM. PDT and Attaboy typically close around 2 AM.
+- **Food pairing**: PDT serves Crif Dogs; The Dead Rabbit and Dante both have excellent food menus worth exploring alongside drinks.
+
+---
+
+## Data Source
+
+*This guide is based on publicly available information. Please verify hours and prices before visiting.*
+*Recommended platforms: Google Maps, Yelp, OpenTable.*
+
+*Last updated: May 2026*

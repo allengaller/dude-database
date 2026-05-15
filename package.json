@@ -10,6 +10,9 @@
     "process": "node scripts/data-pipeline/process.js",
     "generate": "node scripts/data-pipeline/generate.js",
     "validate": "node scripts/tests/validate-data.js",
+    "test": "jest --verbose",
+    "test:ci": "jest --ci --coverage",
+    "fetch:dianping": "node scripts/data-pipeline/fetch-dianping.js",
     "pipeline": "npm run fetch && npm run process && npm run generate && npm run validate",
     "test:hz:spa": "node scripts/data-pipeline/fetch.js --city=hangzhou --category=spa"
   },
