@@ -2,7 +2,7 @@
 
 **数据截止：2026年4月**
 
-本数据库按游戏行业专业标准整理，收录电子游戏产业历史上具有里程碑意义的经典作品和重点系列。**每个游戏独立一个 `.md` 文件**，总计 **332 款游戏**。
+本数据库按游戏行业专业标准整理，收录电子游戏产业历史上具有里程碑意义的经典作品和重点系列。**每个游戏独立一个 `.md` 文件**，总计 **451+ 款游戏**。
 
 ---
 
@@ -12,16 +12,23 @@
 gaming/games/
 ├── 1980s/          # 1980年代经典游戏（28款）
 ├── 1990s/          # 1990年代经典游戏（54款）
+├── 2000s/          # 2000年代经典游戏（70款）
 ├── 2010s/          # 2010年代经典游戏（62款）
 ├── 2020s/          # 2020年代经典游戏（47款）
 ├── 2021/           # 2021年经典游戏（34款）
-├── 2022/           # 2022年经典游戏（37款）
-└── series/         # 重点系列核心作品（70款）
+├── 2022/           # 2022年经典游戏（38款）
+├── 2023/           # 2023年经典游戏（17款）
+├── 2024/           # 2024年经典游戏（22款）
+├── 2025/           # 2025年经典游戏（6款）
+└── series/         # 重点系列核心作品（73款）
     ├── Resident Evil（生化危机）系列
     ├── Call of Duty（使命召唤）系列
     ├── Battlefield（战地）系列
     ├── Silent Hill（寂静岭）系列
-    └── RollerCoaster Tycoon（过山车大亨）系列
+    ├── RollerCoaster Tycoon（过山车大亨）系列
+    ├── Final Fantasy（最终幻想）系列
+    ├── The Legend of Zelda（塞尔达传说）系列
+    └── Pokémon（宝可梦）系列
 ```
 
 ---
@@ -342,7 +349,22 @@ gaming/games/
 
 ---
 
-## 重点游戏系列深度数据库（series/ 目录，70款）
+## 2025年经典游戏（新增）
+
+2025年是游戏产业重要转折点，Nintendo Switch 2发售、多款重磅续作登场。
+
+| # | 游戏 | 文件 |
+|---|------|------|
+| 1 | Grand Theft Auto VI（侠盗猎车手6） | [grand-theft-auto-vi-2025.md](games/2025/grand-theft-auto-vi-2025.md) |
+| 2 | Mario Kart World（马里奥赛车 世界） | [mario-kart-world-2025.md](games/2025/mario-kart-world-2025.md) |
+| 3 | Metroid Prime 4: Beyond（银河战士：生存恐惧 超越） | [metroid-prime-4-beyond-2025.md](games/2025/metroid-prime-4-beyond-2025.md) |
+| 4 | Monster Hunter Wilds（怪物猎人：荒野） | [monster-hunter-wilds-2025.md](games/2025/monster-hunter-wilds-2025.md) |
+| 5 | The Legend of Zelda: Breath of the Wild Sequel（王国之泪） | [zelda-breath-of-the-wild-sequel-2025.md](games/2025/zelda-breath-of-the-wild-sequel-2025.md) |
+| 6 | Elden Ring: Shadow of the Erdtree（黄金树幽影） | [elden-ring-shadow-of-the-erdtree-2025.md](games/2025/elden-ring-shadow-of-the-erdtree-2025.md) |
+
+---
+
+## 重点游戏系列深度数据库（series/ 目录，73款）
 
 ### 生化危机系列（14款）
 
@@ -438,6 +460,71 @@ gaming/games/
 | 10 | RollerCoaster Tycoon Adventures（过山车大亨冒险 / 2018） | [rollercoaster-tycoon-adventures-2018.md](games/series/rollercoaster-tycoon-adventures-2018.md) |
 | 11 | Planet Coaster（过山车之星 / 2016） | [planet-coaster-2016.md](games/series/planet-coaster-2016.md) |
 | 12 | Parkitect（2018） | [parkitect-2018.md](games/series/parkitect-2018.md) |
+
+### 最终幻想系列（20款）
+
+| # | 游戏 | 文件 |
+|---|------|------|
+| 1 | Final Fantasy（最终幻想 / 1987） | [final-fantasy-1987.md](games/series/final-fantasy-1987.md) |
+| 2 | Final Fantasy II（最终幻想2 / 1988） | [final-fantasy-ii-1988.md](games/series/final-fantasy-ii-1988.md) |
+| 3 | Final Fantasy III（最终幻想3 / 1990） | [final-fantasy-iii-1990.md](games/series/final-fantasy-iii-1990.md) |
+| 4 | Final Fantasy IV（最终幻想4 / 1991） | [final-fantasy-iv-1991.md](games/series/final-fantasy-iv-1991.md) |
+| 5 | Final Fantasy V（最终幻想5 / 1992） | [final-fantasy-v-1992.md](games/series/final-fantasy-v-1992.md) |
+| 6 | Final Fantasy VI（最终幻想6 / 1994） | [final-fantasy-vi-1994.md](games/series/final-fantasy-vi-1994.md) |
+| 7 | Final Fantasy VII（最终幻想7 / 1997） | [final-fantasy-vii-1997.md](games/series/final-fantasy-vii-1997.md) |
+| 8 | Final Fantasy VIII（最终幻想8 / 1999） | [final-fantasy-viii-1999.md](games/series/final-fantasy-viii-1999.md) |
+| 9 | Final Fantasy IX（最终幻想9 / 2000） | [final-fantasy-ix-2000.md](games/series/final-fantasy-ix-2000.md) |
+| 10 | Final Fantasy X（最终幻想10 / 2001） | [final-fantasy-x-2001.md](games/series/final-fantasy-x-2001.md) |
+| 11 | Final Fantasy XII（最终幻想12 / 2006） | [final-fantasy-xii-2006.md](games/series/final-fantasy-xii-2006.md) |
+| 12 | Final Fantasy XIII（最终幻想13 / 2009） | [final-fantasy-xiii-2009.md](games/series/final-fantasy-xiii-2009.md) |
+| 13 | Final Fantasy XIV（最终幻想14 / 2010） | [final-fantasy-xiv-2010.md](games/series/final-fantasy-xiv-2010.md) |
+| 14 | Final Fantasy XV（最终幻想15 / 2016） | [final-fantasy-xv-2016.md](games/series/final-fantasy-xv-2016.md) |
+| 15 | Final Fantasy XVI（最终幻想16 / 2023） | [final-fantasy-xvi-2023.md](games/series/final-fantasy-xvi-2023.md) |
+| 16 | Final Fantasy VII Remake（最终幻想7：重制版 / 2020） | [final-fantasy-vii-remake-2020.md](games/series/final-fantasy-vii-remake-2020.md) |
+| 17 | Final Fantasy VII Rebirth（最终幻想7：重生 / 2024） | [final-fantasy-vii-rebirth-2024.md](games/series/final-fantasy-vii-rebirth-2024.md) |
+| 18 | Final Fantasy VII: Crisis Core（核心危机 / 2007） | [final-fantasy-vii-crisis-core-2007.md](games/series/final-fantasy-vii-crisis-core-2007.md) |
+| 19 | Final Fantasy Tactics（最终幻想战略版 / 1997） | [final-fantasy-tactics-1997.md](games/series/final-fantasy-tactics-1997.md) |
+| 20 | Dissidia Final Fantasy（纷争 / 2009） | [dissidia-final-fantasy-2009.md](games/series/dissidia-final-fantasy-2009.md) |
+
+### 塞尔达传说系列（15款）
+
+| # | 游戏 | 文件 |
+|---|------|------|
+| 1 | The Legend of Zelda（塞尔达传说 / 1986） | [the-legend-of-zelda-1986.md](games/series/the-legend-of-zelda-1986.md) |
+| 2 | Zelda II: The Adventure of Link（林克的冒险 / 1987） | [zelda-ii-the-adventure-of-link-1987.md](games/series/zelda-ii-the-adventure-of-link-1987.md) |
+| 3 | A Link to the Past（众神的三角力量 / 1991） | [a-link-to-the-past-1991.md](games/series/a-link-to-the-past-1991.md) |
+| 4 | Link's Awakening（梦见岛 / 1993） | [links-awakening-1993.md](games/series/links-awakening-1993.md) |
+| 5 | Ocarina of Time（时之笛 / 1998） | [ocarina-of-time-1998.md](games/series/ocarina-of-time-1998.md) |
+| 6 | Majora's Mask（姆祖拉的面具 / 2000） | [majoras-mask-2000.md](games/series/majoras-mask-2000.md) |
+| 7 | Wind Waker（风之杖 / 2002） | [wind-waker-2002.md](games/series/wind-waker-2002.md) |
+| 8 | Twilight Princess（暮光公主 / 2006） | [twilight-princess-2006.md](games/series/twilight-princess-2006.md) |
+| 9 | Skyward Sword（天空之剑 / 2011） | [skyward-sword-2011.md](games/series/skyward-sword-2011.md) |
+| 10 | A Link Between Worlds（众神的三角力量2 / 2013） | [a-link-between-worlds-2013.md](games/series/a-link-between-worlds-2013.md) |
+| 11 | Breath of the Wild（旷野之息 / 2017） | [breath-of-the-wild-2017.md](games/series/breath-of-the-wild-2017.md) |
+| 12 | Tears of the Kingdom（王国之泪 / 2023） | [tears-of-the-kingdom-2023.md](games/series/tears-of-the-kingdom-2023.md) |
+| 13 | Link's Awakening（重制版 / 2019） | [links-awakening-remake-2019.md](games/series/links-awakening-remake-2019.md) |
+| 14 | Phantom Hourglass（沙尘之誓 / 2007） | [phantom-hourglass-2007.md](games/series/phantom-hourglass-2007.md) |
+| 15 | Spirit Tracks（灵魂轨迹 / 2009） | [spirit-tracks-2009.md](games/series/spirit-tracks-2009.md) |
+
+### 宝可梦系列（15款）
+
+| # | 游戏 | 文件 |
+|---|------|------|
+| 1 | Pokémon Red & Green（红/绿 / 1996） | [pokemon-red-green-1996.md](games/series/pokemon-red-green-1996.md) |
+| 2 | Pokémon Blue（蓝 / 1996） | [pokemon-blue-1996.md](games/series/pokemon-blue-1996.md) |
+| 3 | Pokémon Yellow（皮卡丘 / 1998） | [pokemon-yellow-1998.md](games/series/pokemon-yellow-1998.md) |
+| 4 | Pokémon Gold & Silver（金/银 / 1999） | [pokemon-gold-silver-1999.md](games/series/pokemon-gold-silver-1999.md) |
+| 5 | Pokémon Ruby & Sapphire（红宝石/蓝宝石 / 2002） | [pokemon-ruby-sapphire-2002.md](games/series/pokemon-ruby-sapphire-2002.md) |
+| 6 | Pokémon Emerald（绿宝石 / 2004） | [pokemon-emerald-2004.md](games/series/pokemon-emerald-2004.md) |
+| 7 | Pokémon FireRed & LeafGreen（火红/叶绿 / 2004） | [pokemon-firered-leafgreen-2004.md](games/series/pokemon-firered-leafgreen-2004.md) |
+| 8 | Pokémon Diamond & Pearl（钻石/珍珠 / 2006） | [pokemon-diamond-pearl-2006.md](games/series/pokemon-diamond-pearl-2006.md) |
+| 9 | Pokémon Platinum（白金 / 2008） | [pokemon-platinum-2008.md](games/series/pokemon-platinum-2008.md) |
+| 10 | Pokémon Black & White（黑/白 / 2010） | [pokemon-black-white-2010.md](games/series/pokemon-black-white-2010.md) |
+| 11 | Pokémon X & Y（X/Y / 2013） | [pokemon-x-y-2013.md](games/series/pokemon-x-y-2013.md) |
+| 12 | Pokémon Sun & Moon（太阳/月亮 / 2016） | [pokemon-sun-moon-2016.md](games/series/pokemon-sun-moon-2016.md) |
+| 13 | Pokémon Sword & Shield（剑/盾 / 2019） | [pokemon-sword-shield-2019.md](games/series/pokemon-sword-shield-2019.md) |
+| 14 | Pokémon Scarlet & Violet（朱/紫 / 2022） | [pokemon-scarlet-violet-2022.md](games/series/pokemon-scarlet-violet-2022.md) |
+| 15 | Pokémon Legends: Z-A（传说 Z-A / 2025） | [pokemon-legends-z-a-2025.md](games/series/pokemon-legends-z-a-2025.md) |
 
 ---
 
