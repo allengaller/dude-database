@@ -21,6 +21,7 @@ This database provides information about lifestyle and entertainment options in 
 - [Thailand](thailand/)
 - [Moscow](moscow/)
 - [Saint Petersburg](spb/)
+- [全球成人产业专题](adult-industry/)
 
 ## File Naming Rule
 
