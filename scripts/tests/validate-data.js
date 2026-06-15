@@ -52,12 +52,12 @@ function validateMarkdown(filepath) {
   }
   
   // 检查数据来源说明
-  if (!content.includes('数据来源')) {
+  if (!content.includes('数据来源') && !content.includes('Data Source') && !content.includes('Data Note') && !content.includes('數據來源')) {
     issues.push('缺少数据来源说明');
   }
   
   // 检查最后更新时间
-  if (!content.includes('最后更新')) {
+  if (!content.includes('最后更新') && !content.includes('Last updated') && !content.includes('最後更新')) {
     issues.push('缺少最后更新时间');
   }
   

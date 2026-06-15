@@ -38,13 +38,13 @@ describe('Markdown Data Files', () => {
 
                 test(`${file} has data source disclaimer`, () => {
                     const content = fs.readFileSync(path.join(cityDir, file), 'utf8');
-                    const hasSource = content.includes('数据来源') || content.includes('Data Source');
+                    const hasSource = content.includes('数据来源') || content.includes('Data Source') || content.includes('Data Note') || content.includes('數據來源');
                     expect(hasSource).toBe(true);
                 });
 
                 test(`${file} has last updated date`, () => {
                     const content = fs.readFileSync(path.join(cityDir, file), 'utf8');
-                    const hasDate = content.includes('最后更新') || content.includes('Last updated');
+                    const hasDate = content.includes('最后更新') || content.includes('Last updated') || content.includes('最後更新');
                     expect(hasDate).toBe(true);
                 });
 

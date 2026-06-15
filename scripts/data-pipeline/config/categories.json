@@ -131,6 +131,36 @@
       "keywords": ["游乐场", "游乐园", "主题乐园"],
       "amapTypes": ["080300", "080301"],
       "priority": 4
+    },
+    "board-game": {
+      "name": "桌游",
+      "keywords": ["桌游", "桌游吧", "桌游俱乐部", "board game"],
+      "amapTypes": ["080900"],
+      "priority": 2
+    },
+    "jubensha": {
+      "name": "剧本杀",
+      "keywords": ["剧本杀", "推理馆", "谋杀之谜", "jubensha"],
+      "amapTypes": ["080900"],
+      "priority": 2
+    },
+    "escape-room": {
+      "name": "密室逃脱",
+      "keywords": ["密室逃脱", "密室", "逃脱室", "escape room"],
+      "amapTypes": ["080900"],
+      "priority": 2
+    },
+    "ktv": {
+      "name": "KTV",
+      "keywords": ["KTV", "卡拉OK", "量贩KTV", "唱歌"],
+      "amapTypes": ["080800"],
+      "priority": 2
+    },
+    "anime-merch": {
+      "name": "谷子二次元",
+      "keywords": ["谷子", "二次元", "动漫周边", "animate", "漫画", "手办"],
+      "amapTypes": ["060100"],
+      "priority": 3
     }
   }
 }
