@@ -308,3 +308,9 @@ npm run fetch:china  # 抓取国内城市数据 (需配置AMAP_KEY)
 ## License
 
 MIT
+
+---
+
+## 2025-2026 维护备注
+
+> 2026-07-08 完成仓库卫生治理：新建 `.gitignore`、将误跟踪的 `node_modules/`（约 7,979 个文件）和 `.DS_Store` 从 git 跟踪中移除。生活方式数据库领域的最新趋势内容将持续补充。
