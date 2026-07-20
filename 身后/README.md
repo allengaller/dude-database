@@ -1,21 +1,28 @@
 # 身后
 
-**身后事务类：殡葬、墓地、养老院等特殊场景的本地资源整理。**
+身后事务类：殡葬、墓地、养老院等特殊场景的本地资源整理。
 
-**文件总数**: 33 md
-**主题数**: 3
+## 品类列表
 
-## 主题列表
+| 品类 | 说明 |
+|------|------|
+| 殡葬 | 殡葬服务机构与流程指南 |
+| 墓地 | 公墓、陵园与墓地选购信息 |
+| 养老院 | 养老机构、护理院推荐 |
 
-### funeral (funeral)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 城市覆盖
 
-### cemetery (cemetery)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+11城全覆盖：上海、杭州、深圳、香港、纽约、莫斯科、圣彼得堡、泰国(曼谷)、东京、新加坡、首尔
 
-### nursing-home (nursing-home)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+**文件总数**: 33 md（3 品类 × 11 城市）
+
+## 文件命名
+
+```
+{城市}-{品类}.md
+```
+
+示例：`上海-殡葬.md`、`莫斯科-墓地.md`、`首尔-养老院.md`
 
 ---
-重构日期: 2026-07-15 (mv 自原 11 个城市目录)
-来源文件命名: `{城市}-{主题}.md`
+Last updated: 2026年7月

@@ -1,27 +1,31 @@
 # 生活
 
-**日常生活类：约会场所、年轻女性相关、共享办公、图书馆、网红打卡等资源整理。**
+日常生活类：美食、约会场所、年轻女性相关、共享办公、图书馆、网红打卡等资源整理。
 
-**文件总数**: 55 md
-**主题数**: 5
+## 品类列表
 
-## 主题列表
+| 品类 | 说明 |
+|------|------|
+| 美食 | 本地特色、高端餐饮、街头小吃推荐 |
+| 约会 | 约会餐厅、活动场所推荐 |
+| 年轻女性 | 年轻女性相关消费与生活资源 |
+| 共享办公 | 共享办公空间、联合办公推荐 |
+| 图书馆 | 公共图书馆、自习空间推荐 |
+| 网红 | 网红打卡地、社交媒体热门地点 |
 
-### 约会 (dating)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 城市覆盖
 
-### 年轻女性 (young-women)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+11城全覆盖：上海、杭州、深圳、香港、纽约、莫斯科、圣彼得堡、泰国(曼谷)、东京、新加坡、首尔
 
-### 共享办公 (coworking)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+**文件总数**: 66 md（6 品类 × 11 城市）
 
-### 图书馆 (library)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 文件命名
 
-### 网红 (internet-famous)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+```
+{城市}-{品类}.md
+```
+
+示例：`上海-约会.md`、`东京-共享办公.md`、`新加坡-网红.md`
 
 ---
-重构日期: 2026-07-15 (mv 自原 11 个城市目录)
-来源文件命名: `{城市}-{主题}.md`
+Last updated: 2026年7月

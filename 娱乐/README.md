@@ -1,27 +1,31 @@
 # 娱乐
 
-**休闲消费类：KTV、夜店、酒吧、咖啡店、网吧等场所的本地资源整理。**
+休闲消费类：KTV、夜店、酒吧、咖啡店、网吧、电影院等场所的本地资源整理。
 
-**文件总数**: 52 md
-**主题数**: 5
+## 品类列表
 
-## 主题列表
+| 品类 | 说明 |
+|------|------|
+| KTV | 量贩式KTV、迷你KTV推荐 |
+| 夜店 | 夜店、Club与电音派对推荐 |
+| 酒吧 | 精酿酒吧、鸡尾酒吧、清吧推荐 |
+| 咖啡 | 精品咖啡馆、特色咖啡店推荐 |
+| 网吧 | 网咖、电竞馆推荐 |
+| 电影 | 高端特效厅、艺术影院、连锁影院推荐 |
 
-### KTV (ktv)
-覆盖城市 (8): hangzhou, hongkong, moscow, newyork, shanghai, shenzhen, spb, thailand
+## 城市覆盖
 
-### 夜店 (nightclub)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+11城全覆盖：上海、杭州、深圳、香港、纽约、莫斯科、圣彼得堡、泰国(曼谷)、东京、新加坡、首尔
 
-### 酒吧 (bars)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+**文件总数**: 66 md（6 品类 × 11 城市）
 
-### 咖啡 (coffee)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 文件命名
 
-### 网吧 (internet-cafe)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+```
+{城市}-{品类}.md
+```
+
+示例：`上海-KTV.md`、`莫斯科-夜店.md`、`新加坡-咖啡.md`
 
 ---
-重构日期: 2026-07-15 (mv 自原 11 个城市目录)
-来源文件命名: `{城市}-{主题}.md`
+Last updated: 2026年7月

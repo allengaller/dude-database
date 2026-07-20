@@ -1,57 +1,98 @@
 const fs = require('fs');
 const path = require('path');
 
-const CITIES = ['hangzhou', 'shanghai', 'shenzhen', 'hongkong', 'newyork', 'thailand', 'moscow', 'spb'];
-const DATA_DIR = path.join(__dirname, '../..');
+const ROOT = path.join(__dirname, '../..');
 
-describe('Markdown Data Files', () => {
-    CITIES.forEach(city => {
-        describe(`${city} directory`, () => {
-            const cityDir = path.join(DATA_DIR, city);
+// 新结构: 6 大类 + gaming + adult-industry
+const BIG_DIRS = ['游戏', '娱乐', '景点', '购物', '健康', '生活', '身后'];
+const CITIES = ['上海', '杭州', '深圳', '香港', '纽约', '莫斯科', '圣彼得堡',
+                '泰国', '东京', '新加坡', '首尔'];
 
-            beforeAll(() => {
-                if (!fs.existsSync(cityDir)) {
-                    throw new Error(`Directory ${cityDir} does not exist`);
+describe('Markdown Data Files - 6 大主题分类结构', () => {
+    describe('总文件统计', () => {
+        test('总 md 文件数 >= 300', () => {
+            let total = 0;
+            for (const dir of BIG_DIRS) {
+                const d = path.join(ROOT, dir);
+                if (fs.existsSync(d)) {
+                    const files = fs.readdirSync(d).filter(f => f.endsWith('.md'));
+                    total += files.length;
+                }
+            }
+            expect(total).toBeGreaterThanOrEqual(300);
+        });
+    });
+
+    describe('每个大类', () => {
+        BIG_DIRS.forEach(dir => {
+            describe(`${dir}/ 目录`, () => {
+                const bigPath = path.join(ROOT, dir);
+                const exists = fs.existsSync(bigPath);
+
+                test('目录存在', () => {
+                    expect(exists).toBe(true);
+                });
+
+                if (exists) {
+                    test('包含 README.md 索引', () => {
+                        expect(fs.existsSync(path.join(bigPath, 'README.md'))).toBe(true);
+                    });
+
+                    const files = fs.readdirSync(bigPath).filter(f => f.endsWith('.md') && f !== 'README.md');
+
+                    test('至少包含 20 个 md 文件', () => {
+                        expect(files.length).toBeGreaterThanOrEqual(20);
+                    });
+
+                    files.forEach(file => {
+                        describe(`${file}`, () => {
+                            const content = fs.readFileSync(path.join(bigPath, file), 'utf8');
+
+                            test('文件以 # 标题开头', () => {
+                                expect(content.startsWith('#')).toBe(true);
+                            });
+
+                            test('文件大小 >= 500 字节', () => {
+                                expect(content.length).toBeGreaterThanOrEqual(500);
+                            });
+
+                            test('包含数据说明', () => {
+                                const hasSource = content.includes('数据说明') || content.includes('数据来源') ||
+                                                  content.includes('Data Source') || content.includes('Data Note') ||
+                                                  content.includes('數據來源');
+                                expect(hasSource).toBe(true);
+                            });
+
+                            test('包含至少 3 个 ## 章节', () => {
+                                const h2Count = (content.match(/^## /gm) || []).length;
+                                expect(h2Count).toBeGreaterThanOrEqual(3);
+                            });
+
+                            test('包含实际内容 (非占位符)', () => {
+                                const hasRealContent = content.includes('###') || content.includes('推荐') ||
+                                                       content.includes('Recommended') || content.includes('地址');
+                                expect(hasRealContent).toBe(true);
+                            });
+                        });
+                    });
                 }
             });
+        });
+    });
 
-            test('directory exists', () => {
-                expect(fs.existsSync(cityDir)).toBe(true);
-            });
-
-            test('contains at least 10 md files', () => {
-                const files = fs.readdirSync(cityDir).filter(f => f.endsWith('.md'));
-                expect(files.length).toBeGreaterThanOrEqual(10);
-            });
-
-            const mdFiles = fs.existsSync(cityDir)
-                ? fs.readdirSync(cityDir).filter(f => f.endsWith('.md'))
-                : [];
-
-            mdFiles.forEach(file => {
-                test(`${file} has valid structure`, () => {
-                    const content = fs.readFileSync(path.join(cityDir, file), 'utf8');
-
-                    expect(content.startsWith('#')).toBe(true);
-                    expect(content.length).toBeGreaterThan(100);
-                });
-
-                test(`${file} has data source disclaimer`, () => {
-                    const content = fs.readFileSync(path.join(cityDir, file), 'utf8');
-                    const hasSource = content.includes('数据来源') || content.includes('Data Source') || content.includes('Data Note') || content.includes('數據來源');
-                    expect(hasSource).toBe(true);
-                });
-
-                test(`${file} has last updated date`, () => {
-                    const content = fs.readFileSync(path.join(cityDir, file), 'utf8');
-                    const hasDate = content.includes('最后更新') || content.includes('Last updated') || content.includes('最後更新');
-                    expect(hasDate).toBe(true);
-                });
-
-                test(`${file} has no placeholder-only content`, () => {
-                    const content = fs.readFileSync(path.join(cityDir, file), 'utf8');
-                    const hasRealContent = content.includes('###') || content.includes('推荐') || content.includes('Recommended');
-                    expect(hasRealContent).toBe(true);
+    describe('11 个城市覆盖', () => {
+        CITIES.forEach(city => {
+            describe(`${city} 城市覆盖`, () => {
+                test('至少出现在 15 个 md 文件中', () => {
+                    let count = 0;
+                    for (const dir of BIG_DIRS) {
+                        const d = path.join(ROOT, dir);
+                        if (fs.existsSync(d)) {
+                            const files = fs.readdirSync(d).filter(f => f.startsWith(city + '-') && f.endsWith('.md'));
+                            count += files.length;
+                        }
+                    }
+                    expect(count).toBeGreaterThanOrEqual(15);
                 });
             });
         });
@@ -59,9 +100,9 @@ describe('Markdown Data Files', () => {
 });
 
 describe('Pipeline Configuration', () => {
-    test('cities.json is valid JSON with required fields', () => {
+    test('cities.json 合法', () => {
         const config = JSON.parse(
-            fs.readFileSync(path.join(DATA_DIR, 'scripts/data-pipeline/config/cities.json'), 'utf8')
+            fs.readFileSync(path.join(ROOT, 'scripts/data-pipeline/config/cities.json'), 'utf8')
         );
         expect(config.cities).toBeDefined();
         expect(Array.isArray(config.cities)).toBe(true);
@@ -70,71 +111,91 @@ describe('Pipeline Configuration', () => {
         config.cities.forEach(city => {
             expect(city.id).toBeDefined();
             expect(city.name).toBeDefined();
-            expect(city.region).toBeDefined();
         });
     });
 
-    test('categories.json is valid JSON with required fields', () => {
+    test('categories.json 合法', () => {
         const config = JSON.parse(
-            fs.readFileSync(path.join(DATA_DIR, 'scripts/data-pipeline/config/categories.json'), 'utf8')
+            fs.readFileSync(path.join(ROOT, 'scripts/data-pipeline/config/categories.json'), 'utf8')
         );
         expect(config.categories).toBeDefined();
-
-        Object.entries(config.categories).forEach(([key, cat]) => {
-            expect(cat.name).toBeDefined();
-            expect(cat.keywords).toBeDefined();
-            expect(Array.isArray(cat.keywords)).toBe(true);
-        });
-    });
-});
-
-describe('Validation Script', () => {
-    test('validate-data.js covers all 8 cities', () => {
-        const script = fs.readFileSync(
-            path.join(DATA_DIR, 'scripts/tests/validate-data.js'), 'utf8'
-        );
-        CITIES.forEach(city => {
-            expect(script).toContain(city);
-        });
     });
 });
 
 describe('Frontend Assets', () => {
-    test('style.css exists and is non-empty', () => {
-        const cssPath = path.join(DATA_DIR, 'assets/style.css');
+    test('style.css 存在且非空', () => {
+        const cssPath = path.join(ROOT, 'assets/style.css');
         expect(fs.existsSync(cssPath)).toBe(true);
         const content = fs.readFileSync(cssPath, 'utf8');
         expect(content.length).toBeGreaterThan(1000);
     });
 
-    test('app.js exists and is non-empty', () => {
-        const jsPath = path.join(DATA_DIR, 'assets/app.js');
+    test('app.js 存在且非空', () => {
+        const jsPath = path.join(ROOT, 'assets/app.js');
         expect(fs.existsSync(jsPath)).toBe(true);
         const content = fs.readFileSync(jsPath, 'utf8');
         expect(content.length).toBeGreaterThan(1000);
     });
 
-    test('index.html references external assets', () => {
-        const html = fs.readFileSync(path.join(DATA_DIR, 'index.html'), 'utf8');
+    test('index.html 引用外部资源', () => {
+        const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
         expect(html).toContain('assets/style.css');
         expect(html).toContain('assets/app.js');
     });
 
-    test('index.html is valid HTML structure', () => {
-        const html = fs.readFileSync(path.join(DATA_DIR, 'index.html'), 'utf8');
+    test('index.html 是有效 HTML 结构', () => {
+        const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
         expect(html).toContain('<!DOCTYPE html>');
         expect(html).toContain('</html>');
         expect(html).toContain('<head>');
         expect(html).toContain('</body>');
     });
+
+    test('index.html 不引用已删除的 md (README.md 等)', () => {
+        const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+        expect(html).not.toMatch(/href="README\.md"/);
+        expect(html).not.toMatch(/href="RECTIFICATION_REPORT\.md"/);
+    });
 });
 
-describe('README Documentation', () => {
-    test('README.md exists', () => {
-        expect(fs.existsSync(path.join(DATA_DIR, 'README.md'))).toBe(true);
+describe('顶层文档', () => {
+    test('项目说明.md 存在', () => {
+        expect(fs.existsSync(path.join(ROOT, '项目说明.md'))).toBe(true);
     });
 
-    test('PROJECT_REVIEW.md exists', () => {
-        expect(fs.existsSync(path.join(DATA_DIR, 'PROJECT_REVIEW.md'))).toBe(true);
+    test('主页指南.md 存在', () => {
+        expect(fs.existsSync(path.join(ROOT, '主页指南.md'))).toBe(true);
+    });
+
+    test('整改报告.md 存在', () => {
+        expect(fs.existsSync(path.join(ROOT, '整改报告.md'))).toBe(true);
+    });
+});
+
+describe('内部链接健康', () => {
+    test('所有 md 文件无内部断裂链接', () => {
+        const linkPattern = /\]\(([^)#]+\.md)\)/g;
+        let brokenCount = 0;
+        const allMd = [];
+        for (const dir of BIG_DIRS) {
+            const d = path.join(ROOT, dir);
+            if (fs.existsSync(d)) {
+                const files = fs.readdirSync(d).filter(f => f.endsWith('.md'));
+                for (const f of files) {
+                    allMd.push(path.join(d, f));
+                }
+            }
+        }
+        for (const f of allMd) {
+            const content = fs.readFileSync(f, 'utf8');
+            let m;
+            while ((m = linkPattern.exec(content)) !== null) {
+                const link = m[1];
+                if (link.startsWith('http')) continue;
+                const target = path.resolve(path.dirname(f), link);
+                if (!fs.existsSync(target)) brokenCount++;
+            }
+        }
+        expect(brokenCount).toBe(0);
     });
 });

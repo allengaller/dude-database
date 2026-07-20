@@ -187,7 +187,7 @@ node scripts/data-pipeline/crawlers/dianping.js 杭州 SPA
 
 错误: `DAILY_QUERY_OVER_LIMIT`
 
-解决: 
+解决:
 - 等待次日配额重置
 - 申请更高配额
 - 使用多个Key轮换

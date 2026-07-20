@@ -1,33 +1,32 @@
 # 健康
 
-**健康医疗类：医院、牙医、健身房、SPA、心理咨询、跑步、骑行等资源整理。**
+健康医疗类：医院、牙医、健身房、SPA、心理咨询、跑步、骑行等资源整理。
 
-**文件总数**: 77 md
-**主题数**: 7
+## 品类列表
 
-## 主题列表
+| 品类 | 说明 |
+|------|------|
+| 医院 | 综合医院、专科诊所与就医指南 |
+| 牙医 | 口腔诊所、牙科推荐 |
+| 健身 | 健身房、私教工作室推荐 |
+| SPA | 水疗、按摩、养生馆推荐 |
+| 心理 | 心理咨询机构与资源 |
+| 跑步 | 跑步路线、跑团与赛事推荐 |
+| 骑行 | 骑行路线、车店与俱乐部推荐 |
 
-### 医院 (hospital)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 城市覆盖
 
-### 牙医 (dentist)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+11城全覆盖：上海、杭州、深圳、香港、纽约、莫斯科、圣彼得堡、泰国(曼谷)、东京、新加坡、首尔
 
-### 健身 (gym)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+**文件总数**: 77 md（7 品类 × 11 城市）
 
-### SPA (spa)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 文件命名
 
-### 心理咨询 (psychology)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+```
+{城市}-{品类}.md
+```
 
-### 跑步 (running)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
-
-### 骑行 (cycling)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+示例：`纽约-医院.md`、`深圳-健身.md`、`首尔-骑行.md`
 
 ---
-重构日期: 2026-07-15 (mv 自原 11 个城市目录)
-来源文件命名: `{城市}-{主题}.md`
+Last updated: 2026年7月

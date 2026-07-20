@@ -1,24 +1,29 @@
 # 游戏
 
-**线下娱乐类：桌游、密室、剧本杀、游乐场等场景的本地资源整理。**
+线下娱乐类：桌游、密室、剧本杀、游乐场等场景的本地资源整理。
 
-**文件总数**: 35 md
-**主题数**: 4
+## 品类列表
 
-## 主题列表
+| 品类 | 说明 |
+|------|------|
+| 桌游 | 桌游吧、桌游俱乐部推荐 |
+| 密室 | 密室逃脱场馆与主题推荐 |
+| 剧本杀 | 剧本杀门店与热门剧本推荐 |
+| 游乐场 | 主题乐园、室内游乐场推荐 |
 
-### 桌游 (board-game)
-覆盖城市 (8): hangzhou, hongkong, moscow, newyork, shanghai, shenzhen, spb, thailand
+## 城市覆盖
 
-### 密室 (escape-room)
-覆盖城市 (8): hangzhou, hongkong, moscow, newyork, shanghai, shenzhen, spb, thailand
+11城全覆盖：上海、杭州、深圳、香港、纽约、莫斯科、圣彼得堡、泰国(曼谷)、东京、新加坡、首尔
 
-### 剧本杀 (jubensha)
-覆盖城市 (8): hangzhou, hongkong, moscow, newyork, shanghai, shenzhen, spb, thailand
+**文件总数**: 44 md（4 品类 × 11 城市）
 
-### 游乐场 (amusement)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 文件命名
+
+```
+{城市}-{品类}.md
+```
+
+示例：`上海-桌游.md`、`东京-密室.md`、`首尔-剧本杀.md`
 
 ---
-重构日期: 2026-07-15 (mv 自原 11 个城市目录)
-来源文件命名: `{城市}-{主题}.md`
+Last updated: 2026年7月

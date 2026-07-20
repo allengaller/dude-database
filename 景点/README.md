@@ -1,21 +1,29 @@
 # 景点
 
-**城市观光类：景区、城市公园、徒步路线等户外资源整理。**
+城市观光类：景区、城市公园、徒步路线、博物馆等文化与户外资源整理。
 
-**文件总数**: 33 md
-**主题数**: 3
+## 品类列表
 
-## 主题列表
+| 品类 | 说明 |
+|------|------|
+| 观光 | 城市地标、热门景区与观光路线 |
+| 公园 | 城市公园、郊野公园推荐 |
+| 徒步 | 徒步路线、登山步道推荐 |
+| 博物馆 | 综合博物馆、艺术美术馆、科技专题馆推荐 |
 
-### 观光 (tourism)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+## 城市覆盖
 
-### 公园 (park)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+11城全覆盖：上海、杭州、深圳、香港、纽约、莫斯科、圣彼得堡、泰国(曼谷)、东京、新加坡、首尔
 
-### 徒步 (hiking)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+**文件总数**: 44 md（4 品类 × 11 城市）
+
+## 文件命名
+
+```
+{城市}-{品类}.md
+```
+
+示例：`杭州-观光.md`、`圣彼得堡-公园.md`、`首尔-徒步.md`
 
 ---
-重构日期: 2026-07-15 (mv 自原 11 个城市目录)
-来源文件命名: `{城市}-{主题}.md`
+Last updated: 2026年7月

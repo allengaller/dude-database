@@ -1,21 +1,28 @@
 # 购物
 
-**消费购物类：二次元周边、艺术、医美等领域的本地资源整理。**
+消费购物类：二次元周边、艺术、医美等领域的本地资源整理。
 
-**文件总数**: 30 md
-**主题数**: 3
+## 品类列表
 
-## 主题列表
+| 品类 | 说明 |
+|------|------|
+| 二次元 | 动漫周边、手办模型、二次元商店推荐 |
+| 艺术 | 画廊、艺术市集、文创商店推荐 |
+| 医美 | 医美机构、皮肤管理、轻医美推荐 |
 
-### 二次元周边 (anime-merch)
-覆盖城市 (8): hangzhou, hongkong, moscow, newyork, shanghai, shenzhen, spb, thailand
+## 城市覆盖
 
-### 艺术 (art)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+11城全覆盖：上海、杭州、深圳、香港、纽约、莫斯科、圣彼得堡、泰国(曼谷)、东京、新加坡、首尔
 
-### 医美 (medical-beauty)
-覆盖城市 (11): hangzhou, hongkong, moscow, newyork, seoul, shanghai, shenzhen, singapore, spb, thailand, tokyo
+**文件总数**: 33 md（3 品类 × 11 城市）
+
+## 文件命名
+
+```
+{城市}-{品类}.md
+```
+
+示例：`东京-二次元.md`、`上海-艺术.md`、`泰国-医美.md`
 
 ---
-重构日期: 2026-07-15 (mv 自原 11 个城市目录)
-来源文件命名: `{城市}-{主题}.md`
+Last updated: 2026年7月

@@ -11,28 +11,28 @@
         ];
 
         const categories = {
-            'spa': { name: 'SPA & 养生', icon: 'fa-spa', color: '#ec4899' },
-            'coffee': { name: '咖啡文化', icon: 'fa-coffee', color: '#6366f1' },
-            'bars': { name: '酒吧 & 夜生活', icon: 'fa-glass-cheers', color: '#06b6d4' },
-            'art': { name: '艺术 & 文化', icon: 'fa-palette', color: '#f59e0b' },
-            'park': { name: '公园 & 户外', icon: 'fa-tree', color: '#10b981' },
-            'gym': { name: '健身 & 运动', icon: 'fa-dumbbell', color: '#8b5cf6' },
-            'library': { name: '图书馆', icon: 'fa-book', color: '#3b82f6' },
-            'hiking': { name: '徒步 & 登山', icon: 'fa-hiking', color: '#ef4444' },
-            'dating': { name: '约会场所', icon: 'fa-heart', color: '#f43f5e' },
-            'tourism': { name: '旅游', icon: 'fa-plane', color: '#06b6d4' },
-            'dentist': { name: '牙科', icon: 'fa-tooth', color: '#14b8a6' },
-            'hospital': { name: '医院', icon: 'fa-hospital', color: '#ef4444' },
-            'psychology': { name: '心理咨询', icon: 'fa-brain', color: '#8b5cf6' },
-            'cemetery': { name: '公墓', icon: 'fa-monument', color: '#64748b' },
-            'funeral': { name: '殡葬服务', icon: 'fa-angel', color: '#64748b' },
-            'nursing-home': { name: '养老院', icon: 'fa-home', color: '#f59e0b' },
-            'cycling': { name: '骑行', icon: 'fa-bicycle', color: '#10b981' },
-            'running': { name: '跑步', icon: 'fa-running', color: '#3b82f6' },
-            'internet-cafe': { name: '网吧', icon: 'fa-gamepad', color: '#6366f1' },
-            'internet-famous': { name: '网红打卡', icon: 'fa-camera', color: '#ec4899' },
-            'amusement': { name: '娱乐', icon: 'fa-ticket-alt', color: '#f59e0b' },
-            'young-women': { name: '年轻女性消费', icon: 'fa-female', color: '#f43f5e' }
+                        'spa': { name: 'SPA & 养生', icon: 'fa-spa', color: '#ec4899', dir: '健康', cn: 'SPA' },
+                        'coffee': { name: '咖啡文化', icon: 'fa-coffee', color: '#6366f1', dir: '娱乐', cn: '咖啡' },
+                        'bars': { name: '酒吧 & 夜生活', icon: 'fa-glass-cheers', color: '#06b6d4', dir: '娱乐', cn: '酒吧' },
+                        'art': { name: '艺术 & 文化', icon: 'fa-palette', color: '#f59e0b', dir: '购物', cn: '艺术' },
+                        'park': { name: '公园 & 户外', icon: 'fa-tree', color: '#10b981', dir: '景点', cn: '公园' },
+                        'gym': { name: '健身 & 运动', icon: 'fa-dumbbell', color: '#8b5cf6', dir: '健康', cn: '健身' },
+                        'library': { name: '图书馆', icon: 'fa-book', color: '#3b82f6', dir: '生活', cn: '图书馆' },
+                        'hiking': { name: '徒步 & 登山', icon: 'fa-hiking', color: '#ef4444', dir: '景点', cn: '徒步' },
+                        'dating': { name: '约会场所', icon: 'fa-heart', color: '#f43f5e', dir: '生活', cn: '约会' },
+                        'tourism': { name: '旅游', icon: 'fa-plane', color: '#06b6d4', dir: '景点', cn: '观光' },
+                        'dentist': { name: '牙科', icon: 'fa-tooth', color: '#14b8a6', dir: '健康', cn: '牙医' },
+                        'hospital': { name: '医院', icon: 'fa-hospital', color: '#ef4444', dir: '健康', cn: '医院' },
+                        'psychology': { name: '心理咨询', icon: 'fa-brain', color: '#8b5cf6', dir: '健康', cn: '心理' },
+                        'cemetery': { name: '公墓', icon: 'fa-monument', color: '#64748b', dir: '身后', cn: '墓地' },
+                        'funeral': { name: '殡葬服务', icon: 'fa-angel', color: '#64748b', dir: '身后', cn: '殡葬' },
+                        'nursing-home': { name: '养老院', icon: 'fa-home', color: '#f59e0b', dir: '身后', cn: '养老院' },
+                        'cycling': { name: '骑行', icon: 'fa-bicycle', color: '#10b981', dir: '健康', cn: '骑行' },
+                        'running': { name: '跑步', icon: 'fa-running', color: '#3b82f6', dir: '健康', cn: '跑步' },
+                        'internet-cafe': { name: '网吧', icon: 'fa-gamepad', color: '#6366f1', dir: '娱乐', cn: '网吧' },
+                        'internet-famous': { name: '网红打卡', icon: 'fa-camera', color: '#ec4899', dir: '生活', cn: '网红' },
+                        'amusement': { name: '娱乐', icon: 'fa-ticket-alt', color: '#f59e0b', dir: '游戏', cn: '游乐场' },
+                        'young-women': { name: '年轻女性消费', icon: 'fa-female', color: '#f43f5e', dir: '生活', cn: '年轻女性' }
         };
 
         // View Switching
@@ -73,7 +73,7 @@
             const catEntries = Object.entries(categories);
 
             cityList.innerHTML = catEntries.map(([key, cat]) => `
-                <div onclick="openMarkdownViewer('${city}/${city}-${key}.md', '${cityInfo.name} - ${cat.name}'); closeModal();"
+                <div onclick="openMarkdownViewer('${categories[key].dir}/${city}-${categories[key].cn}.md', '${cityInfo.name} - ${cat.name}'); closeModal();"
                      class="city-link" style="cursor: pointer;">
                     <i class="fas ${cat.icon}" style="font-size: 20px; color: ${cat.color};"></i>
                     <div>
@@ -100,7 +100,7 @@
             modalSubtitle.textContent = `选择城市查看${catInfo.name}详细信息`;
             
             cityList.innerHTML = cities.map(city => `
-                <div onclick="openMarkdownViewer('${city.id}/${city.id}-${category}.md', '${city.name} - ${catInfo.name}'); closeModal();" 
+                <div onclick="openMarkdownViewer('${categories[category].dir}/${city.id}-${categories[category].cn}.md', '${city.name} - ${catInfo.name}'); closeModal();" 
                      class="city-link" style="cursor: pointer;">
                     <span style="font-size: 24px;">${city.flag}</span>
                     <div>
@@ -154,7 +154,7 @@
 
             for (const city of cities) {
                 for (const catKey of catKeys) {
-                    const url = `${city.id}/${city.id}-${catKey}.md`;
+                    const url = `${categories[catKey].dir}/${city.id}-${categories[catKey].cn}.md`;
                     promises.push(
                         fetch(url)
                             .then(r => r.ok ? r.text() : null)
@@ -384,7 +384,7 @@
                 if (item.type === 'city') {
                     icon = 'fa-city';
                     color = '#6366f1';
-                    onclick = `openMarkdownViewer('${item.id}/${item.id}-spa.md', '${item.name} SPA 指南')`;
+                    onclick = `openMarkdownViewer('健康/${cityMap[item.id] || item.id}-SPA', '${item.name} SPA 指南')`;
                 } else if (item.type === 'category') {
                     icon = categories[item.id]?.icon || 'fa-folder';
                     color = categories[item.id]?.color || '#6366f1';
@@ -456,7 +456,7 @@
                     if (item.type === 'city') {
                         icon = 'fa-city';
                         color = '#6366f1';
-                        onclick = `closeFavorites(); openMarkdownViewer('${item.id}/${item.id}-spa.md', '${item.name} SPA 指南');`;
+                        onclick = `closeFavorites(); openMarkdownViewer('健康/${cityMap[item.id] || item.id}-SPA', '${item.name} SPA 指南');`;
                     } else if (item.type === 'category') {
                         icon = categories[item.id]?.icon || 'fa-folder';
                         color = categories[item.id]?.color || '#6366f1';
