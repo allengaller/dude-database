@@ -19,20 +19,23 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    
+    # Skip the entire job when AMAP_KEY is not configured — avoids burning
+    # Actions quota on a guaranteed-empty fetch.
+    if: ${{ secrets.AMAP_KEY != '' }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Fetch data (China cities)
         env:
           AMAP_KEY: ${{ secrets.AMAP_KEY }}
