@@ -1,0 +1,41 @@
+{
+  "name": "dude-database",
+  "version": "2.0.0",
+  "description": "全球生活方式数据库 - 真实数据接入系统",
+  "main": "index.html",
+  "scripts": {
+    "fetch": "node scripts/data-pipeline/fetch.js",
+    "fetch:china": "node scripts/data-pipeline/fetch.js --region=china",
+    "fetch:intl": "node scripts/data-pipeline/fetch.js --region=international",
+    "process": "node scripts/data-pipeline/process.js",
+    "generate": "node scripts/data-pipeline/generate.js",
+    "validate": "node scripts/tests/validate-data.js",
+    "test": "jest --verbose",
+    "test:ci": "jest --ci --coverage",
+    "fetch:dianping": "node scripts/data-pipeline/fetch-dianping.js",
+    "pipeline": "npm run fetch && npm run process && npm run generate && npm run validate",
+    "test:hz:spa": "node scripts/data-pipeline/fetch.js --city=hangzhou --category=spa"
+  },
+  "keywords": [
+    "lifestyle",
+    "database",
+    "city-guide",
+    "china",
+    "travel"
+  ],
+  "author": "DUDE Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ejs": "^3.1.9",
+    "puppeteer": "^21.5.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

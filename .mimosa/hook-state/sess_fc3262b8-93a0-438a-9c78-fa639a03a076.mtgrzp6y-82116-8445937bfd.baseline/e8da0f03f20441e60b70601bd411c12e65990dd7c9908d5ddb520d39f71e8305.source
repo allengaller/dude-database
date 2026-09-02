@@ -1,0 +1,86 @@
+name: Data Pipeline
+
+on:
+  # 每周日凌晨2点自动运行
+  schedule:
+    - cron: '0 2 * * 0'
+  # 手动触发
+  workflow_dispatch:
+    inputs:
+      city:
+        description: '指定城市 (如: hangzhou)'
+        required: false
+        default: ''
+      category:
+        description: '指定类别 (如: spa)'
+        required: false
+        default: ''
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    # Skip the entire job when AMAP_KEY is not configured — avoids burning
+    # Actions quota on a guaranteed-empty fetch.
+    if: ${{ secrets.AMAP_KEY != '' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch data (China cities)
+        env:
+          AMAP_KEY: ${{ secrets.AMAP_KEY }}
+        run: |
+          if [ -n "${{ github.event.inputs.city }}" ]; then
+            node scripts/data-pipeline/fetch.js --city=${{ github.event.inputs.city }} --category=${{ github.event.inputs.category }}
+          else
+            node scripts/data-pipeline/fetch.js --region=china
+          fi
+      
+      - name: Generate Markdown
+        run: node scripts/data-pipeline/generate.js
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update data from Amap API [automated]'
+          title: '📊 Data Update: Weekly Sync from Amap'
+          body: |
+            ## Automated Data Update
+            
+            This PR contains the latest data fetched from Amap API.
+            
+            ### Changes
+            - Updated venue data for China cities
+            - Regenerated Markdown files
+            
+            ### Stats
+            - Fetch time: ${{ github.event.repository.updated_at }}
+            - Source: Amap Maps API
+            
+            Please review the changes before merging.
+          branch: automated/data-update
+          delete-branch: true
+          add-paths: |
+            data/venues/**
+            */*.md
